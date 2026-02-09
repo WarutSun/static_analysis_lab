@@ -1,5 +1,10 @@
+import sys
+import os
 import pytest
-from invoice_service import InvoiceService, Invoice, LineItem
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from src.invoice_service import InvoiceService, Invoice, LineItem
 
 def test_compute_total_basic():
     service = InvoiceService()

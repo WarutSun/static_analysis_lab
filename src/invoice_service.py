@@ -144,3 +144,4 @@ class InvoiceService:
             warnings.append("Consider membership upgrade")
 
         return total, warnings
+
